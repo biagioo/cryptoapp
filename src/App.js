@@ -3,20 +3,20 @@ import { Switch, Route, Link } from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd';
 
 import {
-  Navbar,
   Exchanges,
   Homepage,
-  Cryptocurrencies,
   News,
+  Cryptocurrencies,
   CryptoDetails,
+  Navbar,
 } from './components';
 
 import './App.css';
 
-const app = () => {
+const App = () => {
   return (
     <div className='app'>
-      <div className='narbar'>
+      <div className='navbar'>
         <Navbar />
       </div>
       <div className='main'>
@@ -61,4 +61,4 @@ const app = () => {
   );
 };
 
-export default app;
+export default App;
