@@ -46,9 +46,9 @@ const App = () => {
             level={5}
             style={{ color: 'white', textAlign: 'center' }}
           >
-            CryptoVerse
-            <br />
-            All Rights Reserved
+            Copyright © 2021
+            <Link to='/'>Cryptoverse Inc.</Link> <br />
+            All Rights Reserved.
           </Typography.Title>
           <Space>
             <Link to='/'>Home</Link>
