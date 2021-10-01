@@ -10,10 +10,10 @@ import { News, Cryptocurrencies } from '../components';
 const { Title } = Typography;
 
 const Homepage = () => {
-  const { data, isFetching } = useGetCryptosQuery();
+  const { data, isFetching } = useGetCryptosQuery(10);
 
   const globalStats = data?.data?.stats;
-  console.log(globalStats);
+
   if (isFetching) return 'Loadinggg...';
 
   return (
@@ -47,7 +47,7 @@ const Homepage = () => {
           Top 10 Cryptocurrencies In The World
         </Title>
         <Title level={3} className='show-more'>
-          <Link to='/cryptocurrenices'>Show More</Link>
+          <Link to='/cryptocurrencies'>Show More</Link>
         </Title>
       </div>
       <Cryptocurrencies simplified />
